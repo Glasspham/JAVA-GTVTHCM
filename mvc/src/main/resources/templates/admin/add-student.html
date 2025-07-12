@@ -1,0 +1,34 @@
+<!--Tạo ra form chứa các input add student {id, name, email, phone}-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add New Student</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="/js/script.js"></script>
+  </head>
+  <body>
+    <h1>Add New Student</h1>
+    <form action="/admin/student" method="post">
+      <div class="form-group">
+        <label for="name">Name :</label>
+        <input type="text" id="name" name="name" required />
+      </div>
+      <div class="form-group">
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email" required />
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone: </label>
+        <input type="text" id="phone" name="phone" required />
+      </div>
+      <button type="submit">Add Student</button>
+      <button type="reset">Reset</button>
+      <a href="/home" class="btn btn-secondary">Back to Students List</a>
+    </form>
+    <footer>
+      <p>&copy; 2023 Your Company. All rights reserved .</p></p>
+    </footer>
+  </body>
+</html>

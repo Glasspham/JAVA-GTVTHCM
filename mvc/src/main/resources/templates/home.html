@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Welcome to the Home Page</h1>
+    <p>This is a simple home page for our web application.</p>
+    <!-- <a href="/about">About Us</a>
+    <a href="/contact">Contact Us</a>
+    <a href="/login">Login</a>
+    <a href="/register">Register</a>
+    <a href="/logout">Logout</a>
+    <a href="/profile">Profile</a>
+    <a href="/settings">Settings</a>
+    <a href="/dashboard">Dashboard</a>
+    <a href="/admin">Admin</a>
+    <a href="/help">Help</a>
+    <a href="/terms">Terms of Service</a>
+    <a href="/privacy">Privacy Policy</a>
+    <a href="/faq">FAQ</a> -->
+    <a href="/admin/add-student" class="btn btn-primary">View Students</a>
+
+    <!--Danh sách học sinh hiển thị lên trang web-->
+    <h1 class="mt-5">Students List</h1>
+    <div th:each="student : ${students}" class="card mt-3">
+      <div class="card-body">
+        <h5 class="card-title">Id: <span th:text="${student.id}"></span></h5>
+        <p class="card-text">name: <span th:text="${student.name}"></span></p>
+        <p class="card-text">email: <span th:text="${student.email}"></span></p>
+      </div>
+    </div>
+
+    <footer>
+      <p>&copy; 2023 Your Company. All rights reserved .</p>
+    </footer>
+  </body>
+</html>

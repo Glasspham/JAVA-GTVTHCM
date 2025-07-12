@@ -1,0 +1,85 @@
+:where([class^="ri-"])::before {
+    content: "\f3c2";
+}
+/* Simple CSS for layout and table */
+body {
+    background: #f3f4f6;
+    font-family: Arial, sans-serif;
+}
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px #0001;
+    padding: 24px;
+}
+h1 {
+    font-size: 2rem;
+    color: #0284c7;
+    margin-bottom: 16px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 24px;
+}
+th,
+td {
+    padding: 12px 8px;
+    border-bottom: 1px solid #e5e7eb;
+    text-align: left;
+}
+th {
+    background: #0284c7;
+    color: #fff;
+}
+tr:hover {
+    background: #f1f5f9;
+}
+.form-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+.form-label {
+    width: 100px;
+    background: #f1f5f9;
+    padding: 8px;
+    color: #374151;
+    border-radius: 4px;
+}
+.form-input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #d1d5db;
+    border-radius: 4px;
+    margin-left: 8px;
+}
+.btn {
+    padding: 8px 20px;
+    border: none;
+    border-radius: 6px;
+    color: #fff;
+    font-weight: bold;
+    margin-right: 8px;
+    cursor: pointer;
+}
+.btn-add {
+    background: #0284c7;
+}
+.btn-update {
+    background: #f59e0b;
+}
+.btn-delete {
+    background: #dc2626;
+}
+.btn:active {
+    opacity: 0.8;
+}
+.radio-cell {
+    text-align: center;
+}
+.radio-cell input[type="radio"] {
+    accent-color: #0284c7;
+}
